@@ -114,6 +114,7 @@ declare module Chance {
         pad(num: number, width: number, padChar?: string): string;
         pick<T>(arr: T[]): T;
         pick<T>(arr: T[], count: number): T[];
+        pickset<T>(arr: T[], count: number): T[];
         set: Setter;
         shuffle<T>(arr: T[]): T[];
 
