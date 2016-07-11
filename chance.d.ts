@@ -113,7 +113,8 @@ declare module Chance {
         mixin(desc: MixinDescriptor): any;
         pad(num: number, width: number, padChar?: string): string;
         pick<T>(arr: T[]): T;
-        pick<T>(arr: T[], count: number): T[];
+        pick<T>(arr: T[], count: number): T | T[];
+        pickset<T>(arr: T[]): T[];
         pickset<T>(arr: T[], count: number): T[];
         set: Setter;
         shuffle<T>(arr: T[]): T[];
